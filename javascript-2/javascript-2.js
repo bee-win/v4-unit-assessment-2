@@ -36,6 +36,9 @@ let foods = [
 */
 
 //CODE HERE
+foods.forEach(function(element, index, array) {
+  return 0
+})
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -81,6 +84,7 @@ const products = [
 */
 
 //CODE HERE
+
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -216,6 +220,7 @@ const userInfo = {
 */
 
 //CODE HERE
+let shouldAlert = userInfo.settings.alerts;
 
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -224,6 +229,7 @@ const userInfo = {
 */
 
 //CODE HERE
+let topic = userInfo.topics[userInfo.topics.length-1];
 
 ////////////////////PROBLEM 11////////////////////
 /*
@@ -232,6 +238,7 @@ const userInfo = {
 */
 
 //CODE HERE
+let commenterId = userInfo.comments[1].responses.userId[0];
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -251,6 +258,28 @@ const userInfo = {
 */
 
 //CODE HERE
+let person = {
+  name: 'Barry',
+  age: 23,
+  jobs: ['artist', 'programmer', 'player'],
+  birthday: function() {
+    this.age += 1
+  }, 
+  color: 'Blue',
+  number: 11,
+  book: 'Catcher in the Rye',
+  kids: [
+    {
+      name: 'Kelly',
+      age: 12
+    },
+    {
+      name: 'Brian',
+      age: 11
+    }
+  ]
+}
+
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
@@ -276,7 +305,7 @@ const workout = {
 //let context1 = myFunc
 //let context1 = window
 //let context1 = global
-// let context1 = workout
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -289,6 +318,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
+let context2 = window
 //let context2 = global
 //let context2 = workout
